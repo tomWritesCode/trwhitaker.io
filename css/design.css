@@ -1,0 +1,52 @@
+/*************** GLOBAL PAGE STYLINING ***************/
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  margin:0;
+}
+/*************** GLOBAL PAGE STYLINING ***************/
+
+.leftPannel{
+  margin-top: 100px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 70vh;
+  background-color: grey;
+  border-radius: 0 10px 10px 0;
+}
+
+.rightPannel{
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+  width:150px;
+}
+.toolbar{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+.rightTool1, .rightTool2, .rightTool3{
+  background-color: grey;
+  border: solid 1px ghostwhite;
+  width: 150px;
+  height: 33%;
+  border-radius: 10px 0 0 10px;
+}
+
+.main{
+  background-color: dodgerblue;
+  margin-left: 115px;
+  margin-top: 10px;
+  height: calc(100vh - 90px);
+  width: calc(100% - 270px);
+}

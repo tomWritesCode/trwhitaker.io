@@ -1,0 +1,28 @@
+/*************** GLOBAL PAGE STYLINING ***************/
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  margin:0;
+}
+.container{
+  width: 100%;
+  max-width: 1300px;
+  margin:0 auto;
+}
+/*************** GLOBAL PAGE STYLINING ***************/
+
+.titleBanner{
+  background: ghostwhite;
+  height: auto;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  border: 1px solid dodgerblue;
+  font-size: 1.6rem;
+}
