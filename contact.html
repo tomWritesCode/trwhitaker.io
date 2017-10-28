@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
-
+  <div class="backgroundContainer">
   <header>
     <a href="index.html"><img src="assets/logoWhite.svg" class="mainLogo" alt=""></a>
       <div class="right">
@@ -41,16 +41,14 @@
       </div>
 
   </header>
-    <div id="background"></div>
 
-    <div class="contactForm">
+    <div class="flexContainer">
+     <div class="contactForm">
       
-
       <form action="https://formspree.io/tom@trwhitaker.io" method="post"></form>
 
       <input type="hidden" name="_next" value="thanks.html">
-      <div>
-
+      <div class="formFields">
         <label for="name">Name:</label>
           <input type="text" id="name" class="formField">
       
@@ -61,58 +59,15 @@
         <label for="number">Contact Number:</label>
           <input type="number" id="number" class="formField">
 
-        <label for="message">Message</label>
+        <label for="message">Message:</label>
           <textarea name="message" id="message" cols="30" rows="10" class="formField"></textarea>
         
-        <input type="submit" value="Send!">
-
+        <input class="submit" type="submit" value="Send!">
+          </div>
+        </div>
       </div>
-
     </div>  
-
-    <!-- <div class="contactUs">
-    
-      <form action="https://formspree.io/trwhitaker01@gmail.com" method="post">
-    
-        <input type="hidden" name="_next" value="thanks.html">
-    
-        <input type="text">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Type here">
-        <input type="date">
-        <input type="number" value="42" required>
-        <input type="submit" value="Contact Us"> 
-    
-        <div>
-          <label for="firstName">First Name:</label>
-          <input type="text" name="first-name" id="firstName" placeholder="First Name" required=true>
-        </div>
-    
-        <div>
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="last-name" id="lastName" placeholder="Last Name">
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Email:">
-        </div>
-    
-        <div>
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-        </div>
-    
-        <select name="" id="">
-          <option value="Blue">BLue</option>
-          <option value="red">Red</option>
-          <option value="redder">Redder</option>
-        </select> 
-    
-        <input type="submit" value="Contact Us">
-      </form>
-    </div> -->
-
-
+  </div>
 
 <script src="js/main.js"></script>
 </body>

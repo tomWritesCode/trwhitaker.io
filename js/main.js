@@ -1,5 +1,5 @@
 
-
+// MOBILE MENU OPEN AND CLOSE - DO NOT ALTER!!
 document.getElementById('menuBtn').addEventListener('click', function (  ) {
   // OPEN MENU
   if (document.getElementById('menuSlide').classList.contains('menuMobile' && 'slideMenuOpen')) {

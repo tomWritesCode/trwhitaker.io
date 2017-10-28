@@ -22,59 +22,30 @@ img{
 .mainLogo{
   max-height: 70px;
   width: 95%;
+  animation: glitch 200ms infinite;
+}
+.backgroundContainer{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-30deg, #09203f, #537895);
 }
 
-/*************** GLITCH STYLING ***************/
-.glitch {
-  position: relative;
-  line-height: 80px;
-  font-size: 3rem;
-  font-family: 'Kaushan Script', monospace;
-}
-.glitch::before, .glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 
-.glitch::before{
-  left: -3px;
-  text-shadow: 2px 0 rgba(255,0,0,0.5);
-  background: black;
-  animation: noise-anim 1s infinite linear alternate-reverse;
-  transition-delay:10s;
-}
-.glitch::after{
-  left: 4px;
-  text-shadow: 2px 0 rgba(0,0,255,0.5);
-  background: black;
-  animation: noise-anim 1s infinite linear alternate-reverse;
-  transition-delay:10s;
-}
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(110px, 200px, 75px, 0);
+/*************** GLITCH STYLING **************/
+@keyframes glitch{
+  0%, 100%{
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
   }
-  25% {
-    clip: rect(30px, 169px, 76px, 0);
+  
+  
   }
-  50% {
-    clip: rect(100px, 300px, 22px, 0);
-  }
-  75% {
-    clip: rect(100px, 241px, 2px, 0);
-  }
-  100% {
-    clip: rect(40px, 170px, 98px, 0);
-  }
-}
 
 
 /*************** PAGE STANDARD STYLING ***************/
 header{
-  background-color: black;
+  /* background: linear-gradient(-2deg, #29323c, #485563); */
   height: 80px;
   width: 100%;
   color:white;
@@ -92,9 +63,11 @@ header{
   font-weight: bold;
   margin-left: 20px;
   font-family: 'Roboto Mono', monospace;
+  transition: font-size 300ms ease-in-out;
 }
 .right a:hover{
-  color: dodgerblue;
+  text-shadow: 1px 1px 4px black;
+  font-size: 2.1rem;
 }
 
 /*************** DESKTOP STYLING ***************/
@@ -162,7 +135,7 @@ header{
     position: fixed;
     top: 0;
     right: -101%;
-    transition: 500ms ease;
+    transition: all 1200ms ease;
     flex-direction: column;
     background-color: #3a3a3a;
     border-left: solid ghostwhite 2px;
@@ -170,9 +143,12 @@ header{
   }
   .menuMobileOpen{
     right:0;
-    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.0);
+    transition: all 1200ms cubic-bezier(0.175, 0.885, 0.32, 1.0);
   }
-  .slideMenuOpen{} /* MARKER FOR MENU BEING OPEN */
+  /* DO NOT REMOVE - TRIGGER CLASS FOR MENU OPEN/CLOSE */
+  .slideMenuOpen{
+    display: inherit; /* DOES NOTHING - DO NOT EDIT */
+  }
 
   .menuMobile a{
     padding:10px;
@@ -183,9 +159,9 @@ header{
   .background{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 101%;
     opacity: 0;
-    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1000ms ease;
   }
   .backgroundOn{
     position: absolute;
@@ -194,10 +170,9 @@ header{
     margin-top: -80px;
     height: calc(100% + 80px);
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: rgb(0,0,0);
-    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
-    ;
+    transition: all 500ms ease;
   }
 }
 /*************** MOBILE STYLING ***************/

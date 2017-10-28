@@ -1,13 +1,61 @@
-.contactForm{
-  display: block;
-  margin: 0 auto;
+.flexContainer{
+  height: calc(100vh - 80px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.formField{
-  width: 40%;
-  height: 20px;
-  display: block;
+.contactForm{
+  background: linear-gradient(-5deg, #93a5cf, #e4efe9);
+  border-radius: 5px;
+  width: 60vw;
+  height: auto);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px 1px rgb(24, 24, 24);
+}
+.formFields{
+  width: 90%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label{
+  font-size: 30px;
+  padding: 0 10px;
+}
+input{
+  height: 40px;
+  border-radius: 5px;
+  margin: 7px 0;
+}
+.submit{
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  background: linear-gradient(-2deg, #93a5cf, #e4efe9);
+  border-radius: 10px;
+ box-shadow: 2px 2px 10px 1px rgb(24, 24, 24);
+  margin: 10px auto;
+  transition: all 800ms ease-in-out;
+                     
+}
+.submit:hover{
+  background: linear-gradient( -5deg, #596164, #868f96);
+  width: 250px;
+  height: 60px;
+  color: ghostwhite;
 }
 
-label{
+/* MOBILE FORM */
+
+
+@media (max-width: 770px){  
+
 
 }
