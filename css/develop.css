@@ -51,6 +51,36 @@ li:hover{
 .result{
   background: #1e5799;
 }
+section.info{
+  margin: 30px auto 50px;
+  text-align: center; 
+  color: ghostwhite;
+}
+section.info h3{
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+section.info h4{
+  font-size: 2.3rem;
+}
+.linkBanner{
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+  background: ghostwhite;
+  display: flex;
+  justify-content: space-around;
+}
+.linkImage{
+  max-height: 150px;
+  width: auto;
+  margin: 25px auto;
+  transition: all 1s;
+}
+img.linkImage:hover{
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+
 
 @media (max-width: 910px) {
   .flexBox{
@@ -67,5 +97,26 @@ li:hover{
     height: 300px;
     width: 95%;
     margin: 7px 20px;
+  }
+  section.info {
+    margin: 10px auto 30px;
+    text-align: center;
+    color: ghostwhite;
+  }
+
+  section.info h3 {
+    font-size: 2.3rem;
+  }
+  section.info h4 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+  }
+  .linkBanner{
+    width: 100%;
+    border-radius: 0;
+    padding: 0 5px;
+  }
+  .linkImage{
+    max-width: 100%;
   }
 }
