@@ -20,11 +20,10 @@ font-family: 'Kaushan Script', cursive;*/
 a.image{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
   max-width: 200px;
 }
-img.portPhoto{
+img{
   width: calc(100% / 6);
   min-width: 180px;
   max-height: 100%;
@@ -32,7 +31,6 @@ img.portPhoto{
   transition: all 0.3s ease;
   transition-delay: 0.3s;
 }
-
 
 @media (max-width: 760px) {
   .photoGallery{
@@ -44,8 +42,9 @@ img.portPhoto{
   align-items: flex-start;
   width: 40%;
   margin: 5px;
-  }
-  img.portPhoto{
-  min-width: 95vw;
-  }
+}
+img{
+  min-width: 100%;
+}
+
 }

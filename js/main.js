@@ -45,7 +45,6 @@ document.getElementById("background").addEventListener("click", function() {
 });
 
 // WHAT'S NEXT CONSOLE LOG LIST
-// PLAYS IN ORDER WITH setTimeout() GIVING THE TIME FUNCTION FOR DISPLAY
 
 function whatsNext() {
 	// console.clear();
@@ -62,7 +61,7 @@ function whatsNext() {
 			"First off I would like to refactor the style of the site with Sass, it is currently built in plain CSS which is great but Sass could just make life that little easier"
 		);
 		console.log("");
-	}, 1500);
+	}, 2000);
 
 	setTimeout(function() {
 		console.log(
@@ -70,7 +69,7 @@ function whatsNext() {
 			"As well as this site I also have some side projects currently in the works at different levels of production such as the following"
 		);
 		console.log("");
-	}, 3000);
+	}, 4000);
 
 	setTimeout(function() {
 		console.log(
@@ -82,7 +81,7 @@ function whatsNext() {
 			"I would like to rebuild this site completely from the ground up with Google's AMP, after going to the AMP Sydney event I can really see the benefit of building something fast and performant using AMP."
 		);
 		console.log("");
-	}, 4500);
+	}, 6000);
 
 	setTimeout(function() {
 		console.log(
@@ -90,13 +89,10 @@ function whatsNext() {
 			"I am also looking at building a website specifically for my Jewllery and product photography, this is a big passion of mine and I want to continue with this as a business."
 		);
 		console.log("");
-	}, 6000);
+	}, 8000);
 
-	setTimeout(function() {
 	console.log(
 		//CSS Framework
-		"I am currently looking into building a CSS framework with one of my classmates from GA and a great developer Gareth Jones. This will ideally be something light weight and animation driven. Gareth and I wanted to start this project as we thought that having something like this in our portfolio's would be really good to have."
+		"CSS Framework"
 	);
-}, 7500);
-
 }
